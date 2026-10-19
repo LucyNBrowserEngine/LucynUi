@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docs — LucyN UI</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <p class="brand">LucyN UI</p>
+      <h1>Docs</h1>
+
+      <p>Your app is just files plus a dependency on <code>lucynui</code>:</p>
+      <p>
+        <code>app.ts</code> — entry point, calls <code>createApp()</code><br />
+        <code>index.html</code> — your UI<br />
+        <code>style.css</code><br />
+        <code>app.js</code><br />
+        <code>lucyn.config.ts</code> — title / size / port
+      </p>
+
+      <h1>Commands</h1>
+      <p>
+        <code>bun run app.ts</code> — start the app<br />
+        <code>lucyn dev</code> — dev server + window, hot reload on html/css/js changes<br />
+        <code>lucyn build</code> — single binary in <code>./dist</code>
+      </p>
+
+      <h1>Config</h1>
+      <p>
+        <code>lucyn.config.ts</code> in your project root, every field optional:
+        <code>title</code>, <code>width</code>, <code>height</code>, <code>port</code>,
+        <code>dev</code>.
+      </p>
+
+      <h1>API Reference</h1>
+      <p>
+        I mean — do you know HTML? Yes. Do you know CSS? Yes. Do you know JS? Yes. Then what the
+        hell are you doing here, just go edit the template.
+      </p>
+      <p>
+        From <code>&lt;createdappfolder&gt;/app.ts</code>, you've got two ways to run it:
+      </p>
+      <p>
+        <code>bun run app.ts</code> or <code>lucynui dev</code> — start the app<br />
+        <code>bun run build</code> or <code>lucynui build</code> — ship a binary
+      </p>
+      <p>That's the whole API. You already know the rest.</p>
+
+      <nav class="links">
+        <a href="/index.html">Back home</a>
+        <a href="/pages/about.html">About</a>
+      </nav>
+    </main>
+  </body>
+</html>

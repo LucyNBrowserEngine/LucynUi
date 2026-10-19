@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — LucyN UI</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <p class="brand">LucyN UI</p>
+      <h1>Why this exists</h1>
+
+      <p>
+        LucyN UI is part of the LucyN engine family. It was mainly made because I didn't like
+        Electron being big, and also hated how hard Qt made UI to build.
+      </p>
+      <p>
+        So I asked myself: is it possible to build a desktop app in plain, simple HTML, CSS and JS?
+        Turned out it is. I came across the likes of
+        <a href="https://tauri.app">Tauri</a> and
+        <a href="https://www.electronjs.org">Electron</a>, but learning they were 200+ MB for a
+        start, I stopped there.
+      </p>
+      <p>
+        Then I found a webview library — the infamous single <code>webview.h</code> file. I
+        thought about writing a Bun wrapper for it myself, then discovered
+        <a href="https://github.com/tr1ckydev/webview-bun">webview-bun</a>, which had already
+        written that exact wrapper.
+      </p>
+      <p>
+        So what did I do? Like a noble citizen of open source: forked it, merged it in. And well,
+        here we are — <strong>LucyN UI</strong>.
+      </p>
+
+      <button id="back" onclick="window.location.href='/index.html'">Back home</button>
+    </main>
+  </body>
+</html>

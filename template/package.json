@@ -1,0 +1,16 @@
+{
+  "name": "lucyn-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "lucyn dev",
+    "build": "lucyn build"
+  },
+  "dependencies": {
+    "lucynui": "link:.."
+  },
+  "trustedDependencies": ["lucynui"],
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

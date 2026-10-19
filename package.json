@@ -1,0 +1,48 @@
+{
+  "name": "lucynui",
+  "version": "1.0.0",
+  "description": "Desktop apps from plain HTML, CSS and JS. No React, no Rust, no Electron.",
+  "license": "MIT",
+  "type": "module",
+  "module": "src/index.ts",
+  "bin": {
+    "lucyn": "./bin/lucyn.ts",
+    "lucynui": "./bin/lucyn.ts"
+  },
+  "files": [
+    "bin/",
+    "cli/",
+    "src/",
+    "template/",
+    "webview-bun/src/",
+    "webview-bun/build/"
+  ],
+  "scripts": {
+    "dev": "bun src/lucyn.ts --dev",
+    "lucynbuild": "bun src/build.ts",
+    "typecheck": "bun check",
+    "postinstall": "bun ./cli/postinstall.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucyNBrowserEngine/lucynui.git"
+  },
+  "keywords": [
+    "bun",
+    "webview",
+    "desktop",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "dependencies": {
+    "elysia": "^1.4.30",
+    "@sinclair/typebox": "^0.34.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
